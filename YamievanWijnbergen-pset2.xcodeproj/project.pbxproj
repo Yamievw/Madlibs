@@ -12,6 +12,14 @@
 		6C78F1CC1E9CE41800CFF462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1CA1E9CE41800CFF462 /* Main.storyboard */; };
 		6C78F1CE1E9CE41800CFF462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1CD1E9CE41800CFF462 /* Assets.xcassets */; };
 		6C78F1D11E9CE41800CFF462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1CF1E9CE41800CFF462 /* LaunchScreen.storyboard */; };
+		6C78F1E01E9CE4A000CFF462 /* madlib0_simple.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1D91E9CE4A000CFF462 /* madlib0_simple.txt */; };
+		6C78F1E11E9CE4A000CFF462 /* madlib1_tarzan.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1DA1E9CE4A000CFF462 /* madlib1_tarzan.txt */; };
+		6C78F1E21E9CE4A000CFF462 /* madlib2_university.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1DB1E9CE4A000CFF462 /* madlib2_university.txt */; };
+		6C78F1E31E9CE4A000CFF462 /* madlib3_clothes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1DC1E9CE4A000CFF462 /* madlib3_clothes.txt */; };
+		6C78F1E41E9CE4A000CFF462 /* madlib4_dance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1DD1E9CE4A000CFF462 /* madlib4_dance.txt */; };
+		6C78F1E51E9CE4A000CFF462 /* madlibs.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1DE1E9CE4A000CFF462 /* madlibs.png */; };
+		6C78F1E61E9CE4A000CFF462 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C78F1DF1E9CE4A000CFF462 /* Story.swift */; };
+		6C78F1E81E9CFB5200CFF462 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C78F1E71E9CFB5200CFF462 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		6C78F1CD1E9CE41800CFF462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C78F1D01E9CE41800CFF462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C78F1D21E9CE41800CFF462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C78F1D91E9CE4A000CFF462 /* madlib0_simple.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib0_simple.txt; sourceTree = "<group>"; };
+		6C78F1DA1E9CE4A000CFF462 /* madlib1_tarzan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib1_tarzan.txt; sourceTree = "<group>"; };
+		6C78F1DB1E9CE4A000CFF462 /* madlib2_university.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib2_university.txt; sourceTree = "<group>"; };
+		6C78F1DC1E9CE4A000CFF462 /* madlib3_clothes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib3_clothes.txt; sourceTree = "<group>"; };
+		6C78F1DD1E9CE4A000CFF462 /* madlib4_dance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib4_dance.txt; sourceTree = "<group>"; };
+		6C78F1DE1E9CE4A000CFF462 /* madlibs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madlibs.png; sourceTree = "<group>"; };
+		6C78F1DF1E9CE4A000CFF462 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		6C78F1E71E9CFB5200CFF462 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,30 @@
 		6C78F1C51E9CE41800CFF462 /* YamievanWijnbergen-pset2 */ = {
 			isa = PBXGroup;
 			children = (
+				6C78F1D81E9CE4A000CFF462 /* madlibs_ios */,
 				6C78F1C61E9CE41800CFF462 /* AppDelegate.swift */,
 				6C78F1C81E9CE41800CFF462 /* ViewController.swift */,
+				6C78F1E71E9CFB5200CFF462 /* SecondViewController.swift */,
 				6C78F1CA1E9CE41800CFF462 /* Main.storyboard */,
 				6C78F1CD1E9CE41800CFF462 /* Assets.xcassets */,
 				6C78F1CF1E9CE41800CFF462 /* LaunchScreen.storyboard */,
 				6C78F1D21E9CE41800CFF462 /* Info.plist */,
 			);
 			path = "YamievanWijnbergen-pset2";
+			sourceTree = "<group>";
+		};
+		6C78F1D81E9CE4A000CFF462 /* madlibs_ios */ = {
+			isa = PBXGroup;
+			children = (
+				6C78F1D91E9CE4A000CFF462 /* madlib0_simple.txt */,
+				6C78F1DA1E9CE4A000CFF462 /* madlib1_tarzan.txt */,
+				6C78F1DB1E9CE4A000CFF462 /* madlib2_university.txt */,
+				6C78F1DC1E9CE4A000CFF462 /* madlib3_clothes.txt */,
+				6C78F1DD1E9CE4A000CFF462 /* madlib4_dance.txt */,
+				6C78F1DE1E9CE4A000CFF462 /* madlibs.png */,
+				6C78F1DF1E9CE4A000CFF462 /* Story.swift */,
+			);
+			path = madlibs_ios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C78F1D11E9CE41800CFF462 /* LaunchScreen.storyboard in Resources */,
+				6C78F1E31E9CE4A000CFF462 /* madlib3_clothes.txt in Resources */,
+				6C78F1E11E9CE4A000CFF462 /* madlib1_tarzan.txt in Resources */,
+				6C78F1E51E9CE4A000CFF462 /* madlibs.png in Resources */,
 				6C78F1CE1E9CE41800CFF462 /* Assets.xcassets in Resources */,
+				6C78F1E01E9CE4A000CFF462 /* madlib0_simple.txt in Resources */,
+				6C78F1E21E9CE4A000CFF462 /* madlib2_university.txt in Resources */,
+				6C78F1E41E9CE4A000CFF462 /* madlib4_dance.txt in Resources */,
 				6C78F1CC1E9CE41800CFF462 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C78F1E81E9CFB5200CFF462 /* SecondViewController.swift in Sources */,
 				6C78F1C91E9CE41800CFF462 /* ViewController.swift in Sources */,
 				6C78F1C71E9CE41800CFF462 /* AppDelegate.swift in Sources */,
+				6C78F1E61E9CE4A000CFF462 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
