@@ -9,17 +9,32 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    
+    
+    var storyIdentifier: String?
+    var words: String?
+    
+    @IBOutlet weak var storyText: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // display story text
+        storyText.text = words
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func newStory(_ sender: Any) {
+        
+        // make words empty
+        words = ""
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
 
     /*

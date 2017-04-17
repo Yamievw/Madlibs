@@ -19,26 +19,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    @IBAction func buttonSimple(_ sender: UIButton) {
-        
-        
-        }
-
-    @IBAction func buttonTarzan(_ sender: UIButton) {
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewController = segue.destination as! SecondViewController
+        viewController.storyIdentifier = segue.identifier
     }
     
-    @IBAction func buttonUniversity(_ sender: UIButton) {
-  
-    }
-    
-    @IBAction func buttonClothes(_ sender: UIButton) {
-    }
-    
-    @IBAction func buttonDance(_ sender: UIButton) {
-    }
-
 }
-
