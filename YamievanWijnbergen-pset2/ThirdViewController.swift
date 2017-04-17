@@ -9,9 +9,7 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-    
-    
-    var storyIdentifier: String?
+
     var words: String?
     
     @IBOutlet weak var storyText: UITextView!
@@ -21,8 +19,6 @@ class ThirdViewController: UIViewController {
         
         // display story text
         storyText.text = words
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func newStory(_ sender: Any) {
@@ -30,12 +26,11 @@ class ThirdViewController: UIViewController {
         // make words empty
         words = ""
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    
 
     /*
     // MARK: - Navigation

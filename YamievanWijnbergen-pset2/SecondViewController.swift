@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
     var words: String?
     var countPlaceholder: Int?
     var placeholder: String?
+    var story: Story?
     
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var wordCount: UILabel!
@@ -24,18 +25,19 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // only appear when all the words are filled in
+        // start of with goStoryButton hidden
         goStoryButton.isHidden = true
         
-        // get the right descriptives for the chosen story
+        // start with the right elements for the chosen story
+        
         countPlaceholder = story!.getPlaceholderRemainingCount()
         //wordCount.text = "\(countPlaceholder!) word(s) left"
+        
         placeholder = story?.getNextPlaceholder()
         inputField.placeholder = "fill in a \(placeholder!)"
     }
     
     // open each text file depending on which story the user chooses and make title.
-    var story: Story?
     var storyIdentifier: String?
     {
         didSet {
@@ -74,29 +76,29 @@ class SecondViewController: UIViewController {
 
     @IBAction func wordButton(_ sender: AnyObject){
         
-        // appear when all the words are filled in
+        // make goStoryButton appear if all words are filled in
         if countPlaceholder == 1 {
             goStoryButton.isHidden = false
         }
         
-        // if the input is empty, give an error
+        // ensure proper usage
         if inputField.text!.isEmpty {
             inputField.placeholder = "You must fill in a \(placeholder!)!"
         }
             
         else {
             
-        // for each word filled in, give it to text
+        // for each word filled in, give it to the story text
         if countPlaceholder! >= 1 {
                 
-                // update all variables when new word is filled in and remove when it's done
+                // update everything when a placeholder is filled in and remove text
                 countPlaceholder = countPlaceholder! - 1
                 //wordCount.text = "\(countPlaceholder!) word(s) left"
                 story?.fillInPlaceholder(word: inputField.text!)
                 placeholder = story?.getNextPlaceholder()
                 inputField.text?.removeAll()
                 
-                // disable ok button when all the words are filled in
+                // disable oke button so user can't change words afterwards
                 if countPlaceholder! == 0 {
                     inputField.placeholder = "All the words are filled in!"
                     wordButton.isEnabled = false
@@ -105,20 +107,12 @@ class SecondViewController: UIViewController {
                 else {
                     inputField.placeholder = "fill in a \(placeholder!)"
                 }
-            
-//                // If all words are filled in, go to the next screen.
-//                if story!.isFilledIn() {
-//                    performSegue(withIdentifier: "ThirdViewController", sender: self)
-//                }
             }
-            
         }
     }
     
-    
+    // apply the filled in story text to a variable when this button is clicked
     @IBAction func goStoryButton(_ sender: Any) {
-        
-        // give the story text to variable
         words = story!.toString()
     }
     
@@ -127,11 +121,12 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let viewcontroller = segue.destination as? ThirdViewController {
-//            viewcontroller.words = words
-//        }
-//    }
+    // prepare for segue and give variable with story text to next view controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextViewController = segue.destination as? ThirdViewController {
+            nextViewController.words = words!
+        }
+    }
     
     /*
     // MARK: - Navigation
