@@ -12,7 +12,6 @@ class SecondViewController: UIViewController {
     
     // list of variables
     var words: String?
-    var countPlaceholder: Int?
     var placeholder: String?
     var story: Story?
     
@@ -30,8 +29,8 @@ class SecondViewController: UIViewController {
         
         // start with the right elements for the chosen story
         
-        countPlaceholder = story!.getPlaceholderRemainingCount()
-        //wordCount.text = "\(countPlaceholder!) word(s) left"
+        let countPlaceholder = story!.getPlaceholderRemainingCount()
+        wordCount.text = "\(story!.getPlaceholderCount()) word(s) left"
         
         placeholder = story?.getNextPlaceholder()
         inputField.placeholder = "fill in a \(placeholder!)"
@@ -75,10 +74,8 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func wordButton(_ sender: AnyObject){
-        
-        // make goStoryButton appear if all words are filled in
-        if countPlaceholder == 1 {
-            goStoryButton.isHidden = false
+        guard let story = self.story else {
+            return
         }
         
         // ensure proper usage
@@ -89,19 +86,22 @@ class SecondViewController: UIViewController {
         else {
             
         // for each word filled in, give it to the story text
-        if countPlaceholder! >= 1 {
+        if !story.isFilledIn() {
+            
                 
                 // update everything when a placeholder is filled in and remove text
-                countPlaceholder = countPlaceholder! - 1
-                //wordCount.text = "\(countPlaceholder!) word(s) left"
-                story?.fillInPlaceholder(word: inputField.text!)
-                placeholder = story?.getNextPlaceholder()
+                story.fillInPlaceholder(word: inputField.text!)
+                wordCount.text = "\(story.getPlaceholderRemainingCount()) word(s) left"
+                placeholder = story.getNextPlaceholder()
                 inputField.text?.removeAll()
                 
                 // disable oke button so user can't change words afterwards
-                if countPlaceholder! == 0 {
+                if story.isFilledIn() {
                     inputField.placeholder = "All the words are filled in!"
                     wordButton.isEnabled = false
+                    
+                    // make goStoryButton appear if all words are filled in
+                    goStoryButton.isHidden = false
                 }
                     
                 else {

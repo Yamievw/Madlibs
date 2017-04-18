@@ -131,6 +131,7 @@
 				TargetAttributes = {
 					6C78F1C21E9CE41800CFF462 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = QSD9HXK8ZS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -306,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QSD9HXK8ZS;
 				INFOPLIST_FILE = "YamievanWijnbergen-pset2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.YamievanWijnbergen-pset2";
@@ -318,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QSD9HXK8ZS;
 				INFOPLIST_FILE = "YamievanWijnbergen-pset2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.YamievanWijnbergen-pset2";
@@ -345,6 +348,7 @@
 				6C78F1D71E9CE41800CFF462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
