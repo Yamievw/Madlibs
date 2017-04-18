@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5F0C751EA61A34004B3E5A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F0C741EA61A34004B3E5A /* README.md */; };
 		6C78F1C71E9CE41800CFF462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C78F1C61E9CE41800CFF462 /* AppDelegate.swift */; };
 		6C78F1C91E9CE41800CFF462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C78F1C81E9CE41800CFF462 /* ViewController.swift */; };
 		6C78F1CC1E9CE41800CFF462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1CA1E9CE41800CFF462 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C5F0C741EA61A34004B3E5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6C78F1C31E9CE41800CFF462 /* YamievanWijnbergen-pset2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YamievanWijnbergen-pset2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C78F1C61E9CE41800CFF462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C78F1C81E9CE41800CFF462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				6C78F1CD1E9CE41800CFF462 /* Assets.xcassets */,
 				6C78F1CF1E9CE41800CFF462 /* LaunchScreen.storyboard */,
 				6C78F1D21E9CE41800CFF462 /* Info.plist */,
+				6C5F0C741EA61A34004B3E5A /* README.md */,
 			);
 			path = "YamievanWijnbergen-pset2";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5F0C751EA61A34004B3E5A /* README.md in Sources */,
 				6C78F1E81E9CFB5200CFF462 /* SecondViewController.swift in Sources */,
 				6C78F1C91E9CE41800CFF462 /* ViewController.swift in Sources */,
 				6C78F1EA1E9E6A6F00CFF462 /* ThirdViewController.swift in Sources */,
