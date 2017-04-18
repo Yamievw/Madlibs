@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C5F0C751EA61A34004B3E5A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F0C741EA61A34004B3E5A /* README.md */; };
+		6C5F0C771EA61F08004B3E5A /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C5F0C761EA61F08004B3E5A /* screenshot.png */; };
 		6C78F1C71E9CE41800CFF462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C78F1C61E9CE41800CFF462 /* AppDelegate.swift */; };
 		6C78F1C91E9CE41800CFF462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C78F1C81E9CE41800CFF462 /* ViewController.swift */; };
 		6C78F1CC1E9CE41800CFF462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C78F1CA1E9CE41800CFF462 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		6C5F0C741EA61A34004B3E5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6C5F0C761EA61F08004B3E5A /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		6C78F1C31E9CE41800CFF462 /* YamievanWijnbergen-pset2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YamievanWijnbergen-pset2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C78F1C61E9CE41800CFF462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C78F1C81E9CE41800CFF462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		6C78F1BA1E9CE41800CFF462 = {
 			isa = PBXGroup;
 			children = (
+				6C5F0C761EA61F08004B3E5A /* screenshot.png */,
 				6C78F1C51E9CE41800CFF462 /* YamievanWijnbergen-pset2 */,
 				6C78F1C41E9CE41800CFF462 /* Products */,
 			);
@@ -74,7 +77,6 @@
 		6C78F1C51E9CE41800CFF462 /* YamievanWijnbergen-pset2 */ = {
 			isa = PBXGroup;
 			children = (
-				6C5F0C741EA61A34004B3E5A /* README.md */,
 				6C78F1D81E9CE4A000CFF462 /* madlibs_ios */,
 				6C78F1C61E9CE41800CFF462 /* AppDelegate.swift */,
 				6C78F1C81E9CE41800CFF462 /* ViewController.swift */,
@@ -82,6 +84,7 @@
 				6C78F1E91E9E6A6F00CFF462 /* ThirdViewController.swift */,
 				6C78F1CA1E9CE41800CFF462 /* Main.storyboard */,
 				6C78F1CD1E9CE41800CFF462 /* Assets.xcassets */,
+				6C5F0C741EA61A34004B3E5A /* README.md */,
 				6C78F1CF1E9CE41800CFF462 /* LaunchScreen.storyboard */,
 				6C78F1D21E9CE41800CFF462 /* Info.plist */,
 			);
@@ -165,6 +168,7 @@
 				6C78F1D11E9CE41800CFF462 /* LaunchScreen.storyboard in Resources */,
 				6C78F1E31E9CE4A000CFF462 /* madlib3_clothes.txt in Resources */,
 				6C78F1E11E9CE4A000CFF462 /* madlib1_tarzan.txt in Resources */,
+				6C5F0C771EA61F08004B3E5A /* screenshot.png in Resources */,
 				6C78F1E51E9CE4A000CFF462 /* madlibs.png in Resources */,
 				6C78F1CE1E9CE41800CFF462 /* Assets.xcassets in Resources */,
 				6C78F1E01E9CE4A000CFF462 /* madlib0_simple.txt in Resources */,
