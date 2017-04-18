@@ -74,6 +74,7 @@
 		6C78F1C51E9CE41800CFF462 /* YamievanWijnbergen-pset2 */ = {
 			isa = PBXGroup;
 			children = (
+				6C5F0C741EA61A34004B3E5A /* README.md */,
 				6C78F1D81E9CE4A000CFF462 /* madlibs_ios */,
 				6C78F1C61E9CE41800CFF462 /* AppDelegate.swift */,
 				6C78F1C81E9CE41800CFF462 /* ViewController.swift */,
@@ -83,7 +84,6 @@
 				6C78F1CD1E9CE41800CFF462 /* Assets.xcassets */,
 				6C78F1CF1E9CE41800CFF462 /* LaunchScreen.storyboard */,
 				6C78F1D21E9CE41800CFF462 /* Info.plist */,
-				6C5F0C741EA61A34004B3E5A /* README.md */,
 			);
 			path = "YamievanWijnbergen-pset2";
 			sourceTree = "<group>";
